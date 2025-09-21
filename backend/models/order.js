@@ -1,4 +1,3 @@
-// backend/models/order.js
 import mongoose from "mongoose";
 
 const OrderItemSchema = new mongoose.Schema(

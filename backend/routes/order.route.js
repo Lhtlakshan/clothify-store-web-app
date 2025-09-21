@@ -6,9 +6,8 @@ import {
   getOrder,
 } from "../controllers/order.controller.js";
 
-const app = express();
-app.use(verifyJwt)
 const router = express.Router();
+router.use(verifyJwt);
 
 router.post("/checkout", checkout);
 router.get("/", listOrders);
