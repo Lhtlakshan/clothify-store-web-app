@@ -26,7 +26,20 @@ Node.js, Express, MongoDB, Mongoose, bcrypt, JWT, Nodemailer.
 - `npm test` — run tests
 
 ## API endpoints
-Include the list of pdf
+Include in the list of pdf
+
+## Environment variables
+
+1. Frontend
+- VITE_BACKEND_URL = "http://localhost:3000"
+
+2. Backend
+- MONGO_URL = "mongodb+srv://Thilina:thilina123@clothify-cluster.d22wzol.mongodb.net/?retryWrites=true&w=majority&appName=clothify-cluster"
+- PORT = 3000
+- JWT_KEY = "difnsjfniejnfkijrnfeijfnijnfw9283uisjdvksjddsksjdjnskjd"
+- EMAIL_FROM = "thilinalakhewage99@gmail.com"
+- ETHEREAL_USER=alfonzo61@ethereal.email
+- ETHEREAL_PASS=aKEfZNZUj2Jx5AQx6F
 
 ## Implementation notes
 (see IMPLEMENTATION_NOTES.md)
