@@ -16,7 +16,7 @@ const Signup = () => {
             toast.error("please fill all fields");
             return;
         }
-      await axios.post(import.meta.env.VITE_BACKEND_URL + "api/user/register", {
+      await axios.post(import.meta.env.VITE_BACKEND_URL + "/api/user/register", {
         name,
         email,
         password,

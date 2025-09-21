@@ -15,7 +15,7 @@ const Login = () => {
         toast.error("please fill all fields");
         return;
       }
-      const res = await axios.post(import.meta.env.VITE_BACKEND_URL + "api/user/login", {
+      const res = await axios.post(import.meta.env.VITE_BACKEND_URL + "/api/user/login", {
         username,
         password,
       });
@@ -25,7 +25,7 @@ const Login = () => {
       console.log(res.data.token);
       
       
-      navigate("/login");
+      navigate("/products");
       toast.success("Login successful...");
     } catch (err) {
       console.log(err);
