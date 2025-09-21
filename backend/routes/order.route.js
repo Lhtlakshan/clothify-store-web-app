@@ -1,0 +1,17 @@
+import express from "express";
+import verifyJwt from "../middleware/auth.js";
+import {
+  checkout,
+  listOrders,
+  getOrder,
+} from "../controllers/order.controller.js";
+
+const app = express();
+app.use(verifyJwt)
+const router = express.Router();
+
+router.post("/checkout", checkout);
+router.get("/", listOrders);
+router.get("/:id", getOrder);
+
+export default router;

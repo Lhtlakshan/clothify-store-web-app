@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import User from "../models/user.js";
+import User from "../models/User.js";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -41,6 +41,7 @@ export const loginUser = async (req, res) => {
 
       if (isPasswordCorrect) {
         const userData = {
+          userId: user._id,
           name: user.name,
           email: user.email,
         };

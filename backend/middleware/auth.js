@@ -12,6 +12,7 @@ const verifyJwt = (req, res, next) => {
     const token = header.replace("Bearer ", "");
     const decoded = jwt.verify(token, process.env.JWT_KEY);
 
+    req.userId = decoded.userId;
     req.user = decoded; // attach decoded data to request
     next();
   } catch (err) {

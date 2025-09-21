@@ -13,14 +13,6 @@ export const getProductById = (req,res) => {
   res.json(product);
 };
 
-// export const getAllProducts = (req,res) => {
-
-//   if (products == null) {
-//     res.status(404).json({ message: "Products not found" });
-//   }
-//   res.status(200).json(products);
-// };
-
 export const getAllProducts = (req, res) => {
   if (!products || products.length === 0) {
     return res.status(404).json({ message: "Products not found" });
